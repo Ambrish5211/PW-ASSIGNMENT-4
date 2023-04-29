@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT 5</title>
+    <style>
+
+        body{
+            background-color: aquamarine;
+            }
+            .Large, .Medium, .Small, .veryLarge {
+                display: none;
+            }
+            .Large, .Medium, .Small , .veryLarge {
+                font-size: 40px;
+                text-align: center;
+            }
+        h1{
+            text-align: center;
+            font-size: 60px;
+        }
+        @media screen and (min-width:1024px) and (max-width:1440px) {
+            body{
+                background-color: green;
+               
+            }
+            .Large, .Medium, .Small {
+                display: none;
+            }
+            .veryLarge{
+                display: block;
+            }
+        }
+
+            @media screen and (min-width:768px) and (max-width:1024px) {
+            body{
+                background-color: goldenrod;
+            }
+            .Medium, .veryLarge, .Small {
+                display: none;
+            }
+            .Large{
+                display: block;
+            }
+        }
+            @media screen and (min-width:425px) and (max-width:768px) {
+            body{
+                background-color: aqua;
+            }
+            .Large, .Small, .veryLarge {
+                display: none;
+            }
+            .Medium{
+                display: block;
+            }
+        }
+            @media screen  and (max-width:425px) {
+            body{
+                background-color: crimson;
+            }
+            .Large, .Medium, .veryLarge {
+                display: none;
+
+            }
+            .Small{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a Media Query Demo Page.</h1>
+    <p class="veryLarge">Screen Size : 1440px</p>
+    <p class="Large">Screen Size : 1024px</p>
+    <p class="Medium">Screen Size : 768px</p>
+    <p class="Small">Screen Size : 425px</p>
+    
+</body>
+</html>
